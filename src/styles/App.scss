@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+h1,
+h2,
+h3 {
+  color: rgb(39, 39, 39);
+}
+.app {
+  transition: all 0.5s ease;
+}
+.library-active {
+  margin-left: 20rem;
+}
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./librarySong";
+@import "./nav";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");

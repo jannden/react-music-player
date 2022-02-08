@@ -1,0 +1,40 @@
+.library {
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 50px gainsboro;
+  overflow: scroll;
+  z-index: 5;
+  h2 {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .library {
+    width: 100%;
+  }
+}
+.library-closed {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+  border: transparent;
+}
